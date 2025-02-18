@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="clip-ebc",
+    name="clipebc",
     version="0.1.0",
     author="jungseoik",
     author_email="si.jung@pia.space",
@@ -21,7 +21,7 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
     ],
-    python_requires=">=3.8",
+    python_requires=">=3.12.4",
     install_requires=[
         "einops==0.7.0",
         "ftfy==6.1.3",
