@@ -15,10 +15,8 @@ def predict_crowd(image):
     Returns:
         tuple: (예측된 군중 수, 밀도 맵 시각화, 점 시각화)
     """
-    # 예측 수행
     count = model.predict(image)
     
-    # 시각화 생성
     _, density_map = model.visualize_density_map()
     _, dot_map = model.visualize_dots()
     
@@ -28,7 +26,6 @@ def predict_crowd(image):
         dot_map
     )
 
-# Gradio 인터페이스 생성
 with gr.Blocks(title="CLIP-EBC Crowd Counter") as app:
     gr.Markdown("# CLIP-EBC Crowd Counter")
     gr.Markdown("이미지를 업로드하여 군중 수를 예측하고 시각화합니다.")
@@ -54,6 +51,5 @@ with gr.Blocks(title="CLIP-EBC Crowd Counter") as app:
         outputs=[count_text, density_output, dots_output]
     )
 
-# 앱 실행
 if __name__ == "__main__":
     app.launch(share=True)
