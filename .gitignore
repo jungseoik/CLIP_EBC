@@ -171,5 +171,4 @@ cython_debug/
 #.idea/
 
 CLIP_EBC_nwpu_rmse.pth
-incheon_app.py
 .gradio
