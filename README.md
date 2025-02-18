@@ -7,12 +7,8 @@ CLIP-EBC 추론파트를 가져왔습니다.
 
 ```bash
 conda create -n ebc python=3.12.4
+conda activate ebc
 pip install -r requirements.txt
-```
-
-```bash
-자체 설치
-pip install git+https://github.com/jungseoik/CLIP_EBC.git
 ```
 
 ## Gradio
@@ -39,7 +35,6 @@ python app.py
 
 **Note**: When using sliding window prediction, if the image size is not a multiple of the window size, then the last stride will be smaller than `stride` to produce a complete window.
 
-
 ```python
 model = ClipEBC(
     truncation=4,          # 잘라내기 매개변수
@@ -50,7 +45,6 @@ model = ClipEBC(
     # 기타 매개변수...
 )
 ```
-
 
 ## 사용 방법
 
