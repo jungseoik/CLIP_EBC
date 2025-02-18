@@ -172,3 +172,4 @@ cython_debug/
 
 CLIP_EBC_nwpu_rmse.pth
 incheon_app.py
+.gradio
