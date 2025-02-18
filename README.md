@@ -8,6 +8,12 @@ CLIP-EBC 추론파트를 가져왔습니다.
 ```bash
 pip install -r requirements.txt
 ```
+
+## Gradio
+```bash
+python app.py
+```
+
 ## 주요 기능
 
 - 이미지 내 군중 수 예측
