@@ -290,15 +290,15 @@ class BasicBlock(nn.Module):
     def forward(self, x: Tensor) -> Tensor:
         identity = x
 
-        print("Conv1 weight shape:", self.conv1.weight.shape)
-        print("Conv1 weight device:", self.conv1.weight.device)
-        print("Input tensor device:", x.device)
-        print("Input tensor requires_grad:", x.requires_grad)
-        print("Conv1 weight requires_grad:", self.conv1.weight.requires_grad)
-        print(f"Memory before conv1: {torch.cuda.memory_allocated() / 1024**2:.2f} MB")
+        # print("Conv1 weight shape:", self.conv1.weight.shape)
+        # print("Conv1 weight device:", self.conv1.weight.device)
+        # print("Input tensor device:", x.device)
+        # print("Input tensor requires_grad:", x.requires_grad)
+        # print("Conv1 weight requires_grad:", self.conv1.weight.requires_grad)
+        # print(f"Memory before conv1: {torch.cuda.memory_allocated() / 1024**2:.2f} MB")
         out = self.conv1(x)
-        print(f"Memory after conv1: {torch.cuda.memory_allocated() / 1024**2:.2f} MB")
-        print(f"Conv1 output shape: {out.shape}")
+        # print(f"Memory after conv1: {torch.cuda.memory_allocated() / 1024**2:.2f} MB")
+        # print(f"Conv1 output shape: {out.shape}")
         out = self.bn1(out)
         out = self.relu(out)
 
