@@ -19,7 +19,7 @@ pip install git+https://github.com/jungseoik/CLIP_EBC.git
 ```bash
 python app.py
 ```
-
+![sample image](assets/sample.png)
 ## 주요 기능
 
 - 이미지 내 군중 수 예측

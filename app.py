@@ -52,4 +52,4 @@ with gr.Blocks(title="CLIP-EBC Crowd Counter") as app:
     )
 
 if __name__ == "__main__":
-    app.launch(share=True)
+    app.launch(share=False)
