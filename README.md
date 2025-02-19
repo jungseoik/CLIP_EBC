@@ -1,5 +1,10 @@
 # CLIP-EBC: Crowd Counting with CLIP
 
+이 저장소는 [Original Repo](https://github.com/Yiming-M/CLIP-EBC)의 모델 추론 레이어 코드를 기반으로 하고 있습니다.  
+원본 레포지토리의 저작권은 원저자(Yiming-M)에게 있으며, 해당 코드는 MIT 라이선스로 배포되었습니다.  
+
+---
+
 CLIP-EBC 추론파트를 가져왔습니다.
 이미지 내의 군중 수를 계산하고 시각화해주는 레포입니다.
 
