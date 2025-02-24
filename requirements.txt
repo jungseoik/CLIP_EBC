@@ -17,3 +17,4 @@ streamlit
 gradio
 matplotlib
 seaborn
+huggingface_hub
